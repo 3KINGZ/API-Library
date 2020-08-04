@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { GetApiContext } from "../index";
-import { HandleChange } from "../index";
-import { SearchValue } from "../index";
+import { GetApiContext } from "../App";
+import { HandleChange } from "../App";
+import { SearchValue } from "../App";
 
 function Input() {
   const onClickAction = useContext(GetApiContext);
