@@ -5,7 +5,12 @@ import Input from "./Input";
 function Header() {
   return (
     <div className="header-container">
-      <h1 id="top">API-Library</h1>
+      <h1 id="top">
+        API-Library
+        <span role="img" aria-label="book">
+          📖
+        </span>
+      </h1>
       <div className="content">
         <h2>Browse APIs</h2>
         <p>
