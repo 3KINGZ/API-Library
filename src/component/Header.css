@@ -1,0 +1,54 @@
+.header-container {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(54, 112, 232, 1) 0%,
+    rgba(0, 181, 255, 1) 100%
+  );
+  color: white;
+  padding-bottom: 2%;
+  padding-top: 1%;
+  box-sizing: border-box;
+}
+
+.header-container > h1 {
+  margin-left: 8%;
+}
+
+.content {
+  margin-top: 3%;
+  margin-left: 8%;
+}
+
+.content > h2 {
+  font-size: 2.5em;
+}
+
+.content > select {
+  margin-top: 2%;
+}
+
+select {
+  width: 40%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 11px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 1%;
+  border: none;
+}
