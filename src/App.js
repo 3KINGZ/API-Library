@@ -67,14 +67,13 @@ function App() {
           />
         ))}
       </div>
-      {/* <div className="footer">
-        Made with{" "}
+      <div className="footer">
+        Created by <a href="https://github.com/3KINGZ">Victor Kenneth</a>{" "}
         <span role="img" aria-label="sparkling heart">
-          💖
+          🔥
         </span>{" "}
-        by <a href="https://github.com/3KINGZ">Victor Kenneth</a>{" "}
         <a href="#top">Go UP</a>
-      </div> */}
+      </div>
     </div>
   );
 }
