@@ -16,11 +16,14 @@ function Card({ title, category, description, cors, https, auth, link }) {
           {auth ? <div className="auth features">OAuth</div> : null}
         </div>
       </div>
-      <button className="card-btn">
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          Try It!
-        </a>
-      </button>
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="card-a"
+      >
+        <button className="card-btn">Try It!</button>
+      </a>
     </div>
   );
 }

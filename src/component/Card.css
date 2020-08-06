@@ -52,11 +52,16 @@ h5 {
   width: 100%;
   margin: 2% auto;
   display: block;
+  color: white;
 }
 
 a {
   color: white;
   text-decoration: none;
+}
+
+.card-btn:hover {
+  cursor: pointer;
 }
 
 .features-container {
