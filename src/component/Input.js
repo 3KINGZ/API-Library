@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { GetApiContext } from "../App";
 import { HandleChange } from "../App";
 import { SearchValue } from "../App";
+import "./Input.css";
 
 function Input() {
   const onClickAction = useContext(GetApiContext);
