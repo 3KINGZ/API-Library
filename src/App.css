@@ -10,9 +10,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f0f4ff;
 }
+
+.error {
+  text-align: center;
+  margin: 40% auto;
+}
+
 .card-container {
   padding: 4%;
   display: grid;
+  width: 100%;
   grid-gap: 3%;
   align-content: space-evenly;
   grid-template-columns: auto auto auto auto;

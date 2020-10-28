@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { getAPIs } from "./services/services";
 import Header from "./component/Header";
 import Card from "./component/Card";
 import "./App.css";
@@ -14,7 +15,13 @@ function App() {
   const [filter, setFilter] = useState([]);
 
   useEffect(() => {
-    getApiOnMount();
+    getAPIs()
+      .then((data) => {
+        setData(data.entries);
+      })
+      .catch((e) => {
+        setError("...Oops an error occurred while fetching APIs");
+      });
   }, []);
 
   const onHandleChange = (e) => {
@@ -28,20 +35,21 @@ function App() {
     setFilter(filtered);
   };
 
-  function getApiOnMount() {
-    fetch(`https://api.publicapis.org/entries`)
-      .then((res) => res.json())
-      .then((json) =>
-        // Save the posts into state
-        setData(json.entries)
-      )
-      .catch((error) => {
-        setError("...oops an error occured while loading page");
-      });
-  }
+  // function getApiOnMount() {
+  //   fetch(`https://api.publicapis.org/entries`)
+  //     .then((res) => res.json())
+  //     .then((json) => setData(json.entries))
+  //     .catch((error) => {
+  //       setError("...oops an error occured while loading page");
+  //     });
+  // }
 
   if (error) {
-    return <h1>An error while fetching APIs</h1>;
+    return (
+      <div className="error">
+        <h1>{error}</h1>
+      </div>
+    );
   }
 
   return (
